@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gmail</title>
+    <style>
+      #videos {
+        margin: 0%;
+        position: fixed;
+        width: 115%;
+      }
+      body {
+        margin: 0%;
+      }
+
+      div {
+        position: absolute;
+        top: 15%;
+        left: 35%;
+        min-width: 350px;
+        background-color: grey;
+        border: 1px solid white;
+        border-radius: 4px;
+        padding-left: 40px;
+        opacity: 0.9;
+      }
+
+      input {
+        width: 300px;
+        min-width: 100px;
+        border: none;
+        padding: 10px;
+        background-color: whitesmoke;
+        font-size: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      input:focus {
+        outline: none;
+        color: white;
+        background-color: steelblue;
+        opacity: 0.35;
+      }
+
+      button {
+        margin: 20px;
+        width: 80px;
+        border-radius: 4px;
+        height: 30px;
+        color: white;
+        font-size: 18px;
+        border: none;
+        background-color: rgb(175, 102, 243);
+      }
+    </style>
+  </head>
+
+  <body>
+    <video autoplay loop muted id="videos">
+      <source src="D:\htmlprojects\GreatLearningFrontend .html\labSessionHtml\sample_960x400_ocean_with_audio.mp4" type="video/mp4" />
+    </video>
+    <div>
+      <form action="" id="Lab-form">
+        <h1>Create Gmail Account</h1>
+        <input type="text" title="name" placeholder="Full Name" required />
+        <br />
+        <input
+          title="contact_no"
+          placeholder="Phone Number"
+          required
+        />
+        <br />
+        <input type="email" title="email" placeholder="Email Id" required />
+        <br />
+        <button form="Lab-form">Reset</button>
+        <button form="Lab-form">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
